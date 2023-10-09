@@ -6,12 +6,10 @@
     
 }
 
-.container {
-    position: relative;
-    background: url(images.jpg);
+/* .container {
     height: 100vh;
     background-size: 100% 100%;
-}
+} */
 
 .container .navbar {
     width: 100%;
@@ -31,7 +29,7 @@
     font-size: 30px;
     font-family: sans-serif;
     color: white;
-    color: #e72c14;
+    color: rgb(228, 131, 131);
 }
 
 .navbar ul {
@@ -55,9 +53,9 @@
     transition: .5s;
 }
 
-
+.navbar ul li a.active,
 .navbar ul li a:hover {
-    background: #e72c14;
+    background: rgb(228, 131, 131);
     border-radius: 2px;
 }
 
@@ -70,56 +68,20 @@
     user-select: none;
 }
 
-
-.cntr h1 {
-    -webkit-text-stroke: 1px black;
-    color: white;
-    font-size: 50px;
-    font-weight: bold;
-    text-align: center;
-    margin-top: 300px;
-}
-
-.cntr .buttons {
-    text-align: center;
-} 
-
-.buttons button {
-    height: 50px;
-    width: 100px;
-    font-size: 17px;
-    color: #e72c14;
-    background-color: white;
-    border: 1px solid black;
-    cursor: pointer;
-    outline: none;
-    border-radius: 25px;
-}
-
-.buttons button:hover {
-    background-color: wheat;
-    transition: .5s;
-}
-
-.buttons a {
-    text-decoration: none;
-    color: #e72c14;
-}
-
 body {
-    background-color: #e72c14;
+    background-color: rgb(228, 131, 131);
 }
-
 
 .card {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 1000px;
-    height: 300px;
-    background-color: white;
-    padding: 0px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    margin: 10px;
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
   }
 
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Grid sütunları tanımlama */
+    gap: 20px; /* Grid öğeleri arasındaki boşluk */
+  }
