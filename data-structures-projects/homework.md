@@ -76,17 +76,7 @@ O(n log n) - Merge Sort, ortalama ve en kötü durumda da O(n log n) zaman karma
 
 ### Solution;
 
-      7
-     / \
-    5   8
-   /   / \
-  1   6   9
-   \     /
-    3   8
-     \
-      4
-     /
-    2
+<img src="binary.tree.png">
 
 Başlangıçta, kök düğüm (root) olan 7'yi seçiyoruz.
 
